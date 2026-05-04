@@ -85,7 +85,7 @@ def seed_data():
         "balaji@example.com",
         "9876543210",
         "1234",
-        "profile.jpg"
+        "profile.png"
     ))
 
     data = [
@@ -204,8 +204,8 @@ def dashboard():
     col1, col2 = st.columns([1,3])
 
     with col1:
-        if os.path.exists("profile.jpg"):
-            st.image("profile.jpg", width=150)
+        if os.path.exists("profile.png"):
+            st.image("profile.png", width=150)
 
     with col2:
         st.subheader(student.loc[0, "name"])
